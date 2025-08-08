@@ -2,7 +2,6 @@ import { defineStorage } from '@aws-amplify/backend';
 
 export const storage = defineStorage({
   name: 'hart-eu',
-  region: 'eu-central-1',
   access: (allow) => ({
     'public/*': [
       allow.guest.to(['read', 'write']),
